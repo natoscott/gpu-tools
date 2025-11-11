@@ -9,7 +9,7 @@ COPY ./rpms/*.rpm /root/rpms/
 # DNF install packages either from repo or locally
 RUN dnf install -y wget procps-ng pciutils jq iputils ethtool net-tools git autoconf automake libtool diffutils
 RUN dnf install -y infiniband-diags rdma-core-devel libibumad librdmacm libxcb libxcb-devel libxkbcommon
-RUN dnf install -y `ls -1 /root/rpms/*.aarch64.rpm` -y
+RUN dnf install -y `ls -1 /root/rpms/*.x86_64.rpm` -y
 
 # Cleanup 
 WORKDIR /root
