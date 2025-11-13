@@ -1,5 +1,5 @@
-# Start from UBI9 image
-FROM registry.access.redhat.com/ubi9/ubi:latest
+# Start from NVIDIA CUDA UBI9 image
+FROM nvcr.io/nvidia/cuda:12.9.1-devel-ubi9
 
 # Set work directory
 WORKDIR /root
